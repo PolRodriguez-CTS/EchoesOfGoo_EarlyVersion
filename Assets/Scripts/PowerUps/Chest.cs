@@ -1,73 +1,53 @@
 using UnityEngine;
 
-public class Chest : MonoBehaviour
+public class ChestTrigger : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private int _coinsReward = 10;
-    [SerializeField] private float _detectionRadius = 2.5f;
-    [SerializeField] private LayerMask _playerLayer;
-
-    [Header("Visuals & Audio")]
-    [SerializeField] private GameObject _coinVFXPrefab; // Prefab de las partículas
-    [SerializeField] private Transform _vfxSpawnPoint;   // Lugar de donde saldrán las monedas
-    [SerializeField] private SoundType _openSound = SoundType.Chest; // Ajusta a tu enum
-
     private Animator _animator;
-    private bool _isOpened = false;
+    private bool _yaSeAbrio = false;
 
-    private void Awake()
+    [Header("Configuración del Animator")]
+    [SerializeField] private string openTriggerName = "Open";
+
+    [Header("Configuración del VFX (Instanciado)")]
+    [SerializeField] private GameObject vfxPrefab;      // El archivo del VFX desde tu carpeta Assets
+    [SerializeField] private Transform vfxSpawnPoint;   // El punto vacío creado dentro del cofre
+
+    void Awake()
     {
         _animator = GetComponent<Animator>();
-    }
 
-    private void Update()
-    {
-        // Si ya se abrió, no seguimos comprobando nada
-        if (_isOpened) return;
-
-        // Comprobamos si el jugador está dentro del radio de detección
-        bool playerNear = Physics.CheckSphere(transform.position, _detectionRadius, _playerLayer);
-
-        if (playerNear)
+        if (_animator == null)
         {
-            OpenChest();
+            Debug.LogError($"[ChestTrigger] ¡Mendrugo! El objeto {gameObject.name} no tiene un componente Animator.");
         }
     }
 
-    private void OpenChest()
+    void OnTriggerEnter(Collider other)
     {
-        _isOpened = true;
-
-        // 1. Activar animación (Asegúrate de tener un Trigger llamado "Open" en tu Animator)
-        if (_animator != null)
+        if (other.CompareTag("Player") && !_yaSeAbrio)
         {
-            _animator.SetTrigger("Open");
-        }
-
-        // 2. Sonido
-        SoundManager.PlaySound(_openSound, 1f);
-
-        // 3. Crear el efecto visual (VFX) de las monedas
-        if (_coinVFXPrefab != null)
-        {
-            Transform spawnPoint = _vfxSpawnPoint != null ? _vfxSpawnPoint : transform;
-            GameObject vfx = Instantiate(_coinVFXPrefab, spawnPoint.position, spawnPoint.rotation);
+            _yaSeAbrio = true; // Candado lógico para que solo pase UNA vez
             
-            // Destruimos el objeto del VFX después de 3 segundos para no llenar la memoria
-            Destroy(vfx, 3f); 
-        }
+            // 1. Disparar Animación
+            _animator.SetTrigger(openTriggerName); 
 
-        // 4. Añadir las monedas al GameManager
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.AddCoins(_coinsReward);
-        }
-    }
+            // 2. Spawnear el VFX si los campos están asignados
+            if (vfxPrefab != null && vfxSpawnPoint != null)
+            {
+                // Crea el prefab en la posición y rotación exactas del Spawn Point
+                GameObject nuevoVFX = Instantiate(vfxPrefab, vfxSpawnPoint.position, vfxSpawnPoint.rotation);
+                
+                // OPCIONAL: Esto destruye el clon del VFX a los 4 segundos para no llenar la escena de basura
+                Destroy(nuevoVFX, 4f); 
+            }
+            else
+            {
+                Debug.LogWarning($"[ChestTrigger] Revisa el Inspector en {gameObject.name}. Falta asignar el Prefab o el Spawn Point.");
+            }
 
-    // Dibujar el radio en el editor para que puedas ajustarlo visualmente
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _detectionRadius);
+            GameManager.Instance.AddCoins(10);
+
+            Debug.Log($"¡Cofre {gameObject.name} abierto y VFX creado en su sitio!");
+        }
     }
 }
