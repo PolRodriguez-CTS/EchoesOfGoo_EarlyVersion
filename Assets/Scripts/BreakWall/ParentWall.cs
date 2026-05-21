@@ -6,7 +6,7 @@ public class ParentWall : MonoBehaviour
 {
     if (collider.CompareTag("Player"))
     {
-        //SoundManager.PlaySound(SoundType.Wall);
+        SoundManager.PlaySound(SoundType.Wall);
         // Busca todos los Rigidbodys en los hijos y los libera
         Rigidbody[] trozos = GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody rb in trozos)

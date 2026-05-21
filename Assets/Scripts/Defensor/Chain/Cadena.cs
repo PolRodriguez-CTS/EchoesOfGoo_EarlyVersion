@@ -9,7 +9,7 @@ public class Cadena : MonoBehaviour
         if (yaSeRompio) return;
         yaSeRompio = true;
 
-        //SoundManager.PlaySound(SoundType.Chain);
+        SoundManager.PlaySound(SoundType.Chain);
 
         // Buscamos todos los eslabones hijos y les activamos la física
         foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>()) 

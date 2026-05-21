@@ -2,26 +2,27 @@ using UnityEngine;
 
 public class PortalTrigger : MonoBehaviour
 {
-    private Animator _animator;
-    private bool _yaSeActivo = false; // El cerrojo de seguridad
+    private bool _activado = false;
 
-    void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
-
+    // Olvídate de Awake por ahora. Lo buscamos al chocar.
     void OnTriggerEnter(Collider other)
     {
-        // 1. Comprobamos que sea el Player
-        // 2. Comprobamos que no esté ya abierto
-        if (other.CompareTag("Player") && !_yaSeActivo)
+        if (other.CompareTag("Player") && !_activado)
         {
-            _yaSeActivo = true; // Cerramos el paso para que no se repita
+            _activado = true;
             
-            // Usamos SetTrigger como tenías, pero ahora solo pasará UNA vez
-            _animator.SetTrigger("Build"); 
+            // Buscamos el Animator justo en el momento del choque
+            Animator animator = GetComponent<Animator>();
 
-            Debug.Log("¡Portal activado!");
+            if (animator != null)
+            {
+                animator.SetTrigger("Build");
+                Debug.Log("¡ENTRÓ! Físicas funcionando y Animator encontrado.");
+            }
+            else
+            {
+                Debug.LogError("La física funciona, pero este objeto NO tiene un Animator arriba.");
+            }
         }
     }
 }

@@ -8995,18 +8995,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 855113069}
     m_Modifications:
-    - target: {fileID: 2177495509873810800, guid: b2dfd564b4afcef4698941d0320552df, type: 3}
-      propertyPath: audioClips.Array.size
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177495509873810800, guid: b2dfd564b4afcef4698941d0320552df, type: 3}
-      propertyPath: 'audioClips.Array.data[17]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 8bb008dccbb59364b92ff227565190b0, type: 3}
-    - target: {fileID: 2177495509873810800, guid: b2dfd564b4afcef4698941d0320552df, type: 3}
-      propertyPath: 'audioClips.Array.data[18]'
-      value: 
-      objectReference: {fileID: 8300000, guid: cb85f92831e9c5744921bf54d71b7264, type: 3}
     - target: {fileID: 6669175824906621933, guid: b2dfd564b4afcef4698941d0320552df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.57177

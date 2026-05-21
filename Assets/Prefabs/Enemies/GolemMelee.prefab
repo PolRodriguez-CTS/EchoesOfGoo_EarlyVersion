@@ -348,7 +348,7 @@ MonoBehaviour:
   comboStep: 0
   comboResetTime: 3.5
   _explosionPrefab: {fileID: 6996666849242096705, guid: aab6129d2fe7b8a4689908d4d28a011f, type: 3}
-  _collisionForceThreshold: 4
+  _collisionForceThreshold: 3
   _explosionDamage: 50
   _explosionRadius: 5
   _maxAirTime: 4
