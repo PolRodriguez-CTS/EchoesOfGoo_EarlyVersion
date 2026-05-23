@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     [Header("Scene Settings")]
     [SerializeField] private string _mainMenuSceneName = "MainMenu"; // Nombre exacto de tu escena de menú
     [SerializeField] private string _coreSceneName = "Core"; // <--- Nueva variable
+
+    [Header("Excluded Scenes")]
+    [SerializeField] private string _creditsSceneName = "Credits";
+    
     
     private float _animTimer;
     private int _currentFrame;
@@ -153,7 +157,7 @@ public class GameManager : MonoBehaviour
         if (_hudCanvas == null) return;
 
         // Comprobamos si la escena cargada es cualquiera de las excluidas
-        bool isNonGameplayScene = scene.name == _mainMenuSceneName || scene.name == _coreSceneName;
+        bool isNonGameplayScene = scene.name == _mainMenuSceneName || scene.name == _coreSceneName || scene.name == _creditsSceneName;
 
         if (isNonGameplayScene)
         {
@@ -165,6 +169,34 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateCoinUI();
+
+        // 2. CONTROL DEL MOUSE (Nueva lógica)
+        // Queremos el ratón libre en Menú y Créditos. En Core (técnica) o Gameplay, bloqueado.
+        if (scene.name == _mainMenuSceneName || scene.name == _creditsSceneName)
+        {
+            SetMouseState(true);  // Mostrar y liberar ratón
+        }
+        else if (scene.name != _coreSceneName) 
+        {
+            // Solo lo bloqueamos si NO es la escena Core, para evitar conflictos 
+            // si Core se carga de forma aditiva en el menú.
+            SetMouseState(false); // Esconder y bloquear ratón
+        }
+    }
+
+    // Método auxiliar para cambiar el estado del cursor limpiamente
+    public void SetMouseState(bool showMouse)
+    {
+        if (showMouse)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None; // Ratón libre para hacer clic en botones
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked; // Ratón oculto y centrado para mover la cámara
+        }
     }
 
     public void SetTurboUIVisibility(bool visible)
