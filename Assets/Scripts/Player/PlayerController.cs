@@ -65,6 +65,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _baseFOV = 60f;
     [SerializeField] private float _dashFOV = 90f;
     [SerializeField] private float _fovSmoothSpeed = 10f;
+
+    [Header("VFX Settings")]
+    [SerializeField] private GameObject _dashVFxPrefab;   // El prefab de tu efecto
+    [SerializeField] private Transform _vfxSpawnPoint;     // De dónde va a salir (ej: la espalda o pies)
+    private GameObject _currentDashVFx;                    // Para guardar el clon activo
     #endregion
 
     #region Awake & Start
@@ -120,6 +125,8 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("isDashing", true);
 
             SoundManager.PlayLoop(SoundType.Boost, 0.7f);
+
+            StartDashVFX();
         }
 
         if (_dashAction.WasReleasedThisFrame() || _currentEnergy <= 0)
@@ -128,8 +135,38 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("isDashing", false);
 
             SoundManager.StopLoop();
+
+            StopDashVFX();
         }
     }
+
+    private void StopDashVFX()
+    {
+        if (_currentDashVFx != null)
+        {
+            // Opción A: Destruirlo de inmediato
+            Destroy(_currentDashVFx);
+        }
+    }
+
+    private void StartDashVFX()
+    {
+        // Seguridad: si ya había uno por algún error, lo borramos primero
+        if (_currentDashVFx != null) Destroy(_currentDashVFx);
+
+        if (_dashVFxPrefab != null)
+        {
+            // Si no asignaste un punto de origen, usamos la posición del propio jugador
+            Transform spawnLocation = _vfxSpawnPoint != null ? _vfxSpawnPoint : transform;
+
+            // Instanciamos el prefab en la posición y rotación del punto de origen
+            _currentDashVFx = Instantiate(_dashVFxPrefab, spawnLocation.position, spawnLocation.rotation);
+
+            // Hacemos que el VFX sea HIJO del jugador para que lo siga fielmente al correr
+            _currentDashVFx.transform.SetParent(spawnLocation);
+        }
+    }
+
 
     void HandleSpeedEffects()
     {
@@ -223,6 +260,7 @@ public class PlayerController : MonoBehaviour
             // CASO B: Estoy en el aire y tengo el doble salto disponible
             else if (_canDoubleJump)
             {
+                _animator.ResetTrigger("DoubleJump");
                 Jump(_doubleJumpHeight);
                 _animator.SetTrigger("DoubleJump");
                 //_isChargingJump = true;

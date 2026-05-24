@@ -148,7 +148,7 @@ public class CinematicaInicioNivel2 : MonoBehaviour
 
         // Devolvemos el control al personaje con el mapa limpio
         BloquearPersonaje(false);
-        Debug.Log("[CINEMÁTICA] ¡Pantalla purgada y control devuelto al jugador!");
+        //Debug.Log("[CINEMÁTICA] ¡Pantalla purgada y control devuelto al jugador!");
     }
     private void BloquearPersonaje(bool bloquear)
     {

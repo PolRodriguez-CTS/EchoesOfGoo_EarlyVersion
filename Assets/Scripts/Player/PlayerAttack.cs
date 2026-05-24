@@ -198,14 +198,6 @@ public class PlayerAttack : MonoBehaviour
         {
             part.SetActive(false);
         }
-        foreach (var part in _weaponReferences.anchorParts)
-        {
-            part.SetActive(false);
-        }
-        foreach (var part in _weaponReferences.gloveParts)
-        {
-            part.SetActive(false);
-        }
         foreach (var part in _weaponReferences.hammerParts)
         {
             part.SetActive(false);
@@ -221,14 +213,6 @@ public class PlayerAttack : MonoBehaviour
         foreach (var part in _weaponReferences.slimeParts)
         {
             part.SetActive(true);
-        }
-        foreach (var part in _weaponReferences.anchorParts)
-        {
-            part.SetActive(false);
-        }
-        foreach (var part in _weaponReferences.gloveParts)
-        {
-            part.SetActive(false);
         }
         foreach (var part in _weaponReferences.hammerParts)
         {
@@ -246,14 +230,6 @@ public class PlayerAttack : MonoBehaviour
         {
             part.SetActive(false);
         }
-        foreach (var part in _weaponReferences.anchorParts)
-        {
-            part.SetActive(false);
-        }
-        foreach (var part in _weaponReferences.gloveParts)
-        {
-            part.SetActive(false);
-        }
         foreach (var part in _weaponReferences.hammerParts)
         {
             part.SetActive(false);
@@ -262,35 +238,15 @@ public class PlayerAttack : MonoBehaviour
         {
             part.SetActive(false);
         }
-
-        int randomWeapon = Random.Range(0, 2);
-        if(randomWeapon == 0)
-        {
-            foreach (var part in _weaponReferences.anchorParts)
+        foreach (var part in _weaponReferences.hammerParts)
             {
                 part.SetActive(true);
             }
-        }
-        else
-        {
-            foreach (var part in _weaponReferences.hammerParts)
-            {
-                part.SetActive(true);
-            }
-        }
     }
 
     void WeaponBaseAttack()
     {
         foreach (var part in _weaponReferences.slimeParts)
-        {
-            part.SetActive(false);
-        }
-        foreach (var part in _weaponReferences.anchorParts)
-        {
-            part.SetActive(false);
-        }
-        foreach (var part in _weaponReferences.gloveParts)
         {
             part.SetActive(false);
         }
@@ -306,24 +262,6 @@ public class PlayerAttack : MonoBehaviour
         {
             part.SetActive(true);
         }
-
-        /*
-        int randomWeapon = Random.Range(0, 2);
-        if(randomWeapon == 0)
-        {
-            foreach (var part in _weaponReferences.gloveParts)
-            {
-                part.SetActive(true);
-            }
-        }
-        else
-        {
-            foreach (var part in _weaponReferences.bateParts)
-            {
-                part.SetActive(true);
-            }
-        }
-        */
     }
 
     void OnDrawGizmos()
