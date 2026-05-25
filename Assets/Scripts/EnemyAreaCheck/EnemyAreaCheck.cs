@@ -4,34 +4,36 @@ using System.Collections.Generic;
 public class EnemyAreaCheck : MonoBehaviour
 {
     public Door doorScript; 
-    private List<GameObject> enemiesInRange = new List<GameObject>();
+    // NUEVO: Arrastra aquí directamente el script de la cinemática desde el Inspector
+    public DoorCinematic doorCinematicScript; 
 
-    // ESTA ES LA CLAVE: Una variable para saber si ya abrimos
+    private List<GameObject> enemiesInRange = new List<GameObject>();
     private bool hasOpened = false;
     private bool enemiesDetectedOnce = false;
 
     void Update()
     {
-        // 1. Limpiamos la lista
         enemiesInRange.RemoveAll(enemy => enemy == null);
 
-        // 2. Si detectamos enemigos por primera vez, marcamos que la zona está "activa"
         if (enemiesInRange.Count > 0)
         {
             enemiesDetectedOnce = true;
         }
 
-        // 3. Solo intentamos abrir si:
-        // - Ya detectamos enemigos antes (para que no se abra sola al empezar el nivel)
-        // - La lista está vacía
-        // - ¡Y NO la hemos abierto todavía! (hasOpened == false)
         if (enemiesDetectedOnce && enemiesInRange.Count == 0 && !hasOpened)
         {
             doorScript.OpenAnimation();
-            hasOpened = true; // Marcamos como abierta para que no entre aquí nunca más
-            
-            // Opcional: Si ya no necesitas detectar nada más, puedes desactivar el script
-            // this.enabled = false; 
+            hasOpened = true; 
+
+            // NUEVO: Llamada directa y segura
+            if (doorCinematicScript != null)
+            {
+                doorCinematicScript.PlayCinematic();
+            }
+            else
+            {
+                Debug.LogError("¡No has asignado el script DoorCinematic en el Inspector de EnemyAreaCheck!");
+            }
         }
     }
 

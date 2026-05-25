@@ -610,7 +610,7 @@ MonoBehaviour:
   _baseFOV: 60
   _dashFOV: 90
   _fovSmoothSpeed: 10
-  _dashVFxPrefab: {fileID: 5981956667065704350, guid: af19df20e7b76064a884155f32331d30, type: 3}
+  _dashVFxPrefab: {fileID: 7521378423652234203, guid: d3e47f09f7bf9844981861bae42745ae, type: 3}
   _vfxSpawnPoint: {fileID: 5101196072831164711}
 --- !u!114 &8719169375190584086
 MonoBehaviour:
