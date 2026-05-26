@@ -28,6 +28,8 @@ public class TutorialTrigger : MonoBehaviour
 
                 case TipoDeTrigger.ImagenExplicativa:
                     // Enviamos true porque SÍ es una imagen explicativa
+                    SoundManager.PlaySound(SoundType.Coin);
+
                     UIManager.Instance.MostrarPanelTemporal(idMecanicaOLore, duracion, true);
                     break;
 

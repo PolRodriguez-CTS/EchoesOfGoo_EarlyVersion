@@ -29,7 +29,8 @@ public class ChestTrigger : MonoBehaviour
             _yaSeAbrio = true; // Candado lógico para que solo pase UNA vez
             
             // 1. Disparar Animación
-            _animator.SetTrigger(openTriggerName); 
+            _animator.SetTrigger(openTriggerName);
+            SoundManager.PlaySound(SoundType.Chest, 1);
 
             // 2. Spawnear el VFX si los campos están asignados
             if (vfxPrefab != null && vfxSpawnPoint != null)
@@ -45,6 +46,7 @@ public class ChestTrigger : MonoBehaviour
                 Debug.LogWarning($"[ChestTrigger] Revisa el Inspector en {gameObject.name}. Falta asignar el Prefab o el Spawn Point.");
             }
 
+            SoundManager.PlaySound(SoundType.Coin, 1);
             GameManager.Instance.AddCoins(10);
 
             Debug.Log($"¡Cofre {gameObject.name} abierto y VFX creado en su sitio!");

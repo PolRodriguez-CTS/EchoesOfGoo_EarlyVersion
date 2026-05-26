@@ -74,7 +74,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f10b4c51b22a95444b52adc2891939c2, type: 3}
+  m_Resource: {fileID: 8300000, guid: 10317528cc00c1047bf740c2d9820a24, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -82,7 +82,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 59
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 15
@@ -352,7 +352,7 @@ MonoBehaviour:
   _explosionDamage: 50
   _explosionRadius: 5
   _maxAirTime: 4
-  levitationAudioSource: {fileID: 0}
+  levitationAudioSource: {fileID: 2496256551161208108}
   maxLevitationVolume: 0.5
   volumeLerpSpeed: 5
   _VFXPrefab: {fileID: 1936488993998635378, guid: 88b14fae91f3b5345abdc3e7a5f29793, type: 3}

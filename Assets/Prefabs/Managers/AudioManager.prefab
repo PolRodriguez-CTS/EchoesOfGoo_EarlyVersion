@@ -166,6 +166,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 11ce8f552c8434141ac2b2d03fab1a47, type: 3}
   - {fileID: 8300000, guid: cb85f92831e9c5744921bf54d71b7264, type: 3}
   - {fileID: 8300000, guid: 10d0b9a5220d2754eaa24f1a6cd0a093, type: 3}
+  - {fileID: 8300000, guid: f872b91b7146a4143b9303436a340fde, type: 3}
   loopSource: {fileID: 4559723861786137368}
 --- !u!82 &4559723861786137368
 AudioSource:
@@ -186,7 +187,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

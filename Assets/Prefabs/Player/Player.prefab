@@ -640,11 +640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afba2240aaa817043bfec3ad197e2ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHealth: 4
   spawnPoint: {fileID: 0}
-  canvasMuerte: {fileID: 0}
-  tiempoAnimacion: 2
-  tiempoPantallaMuerte: 1.5
+  animator: {fileID: 0}
 --- !u!114 &1478831348341233976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,15 +843,15 @@ Cloth:
   m_GameObject: {fileID: 3374111335564944238}
   m_Enabled: 1
   m_StretchingStiffness: 1
-  m_BendingStiffness: 0
+  m_BendingStiffness: 1
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0
+  m_Damping: 0.75
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
   m_WorldAccelerationScale: 1
-  m_Friction: 0.5
+  m_Friction: 1
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
@@ -12854,15 +12851,15 @@ Cloth:
   m_GameObject: {fileID: 3885731714199036262}
   m_Enabled: 1
   m_StretchingStiffness: 1
-  m_BendingStiffness: 0
+  m_BendingStiffness: 1
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0
+  m_Damping: 0.75
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
   m_WorldAccelerationScale: 1
-  m_Friction: 0.5
+  m_Friction: 1
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1

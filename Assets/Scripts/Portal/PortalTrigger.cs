@@ -60,6 +60,7 @@ public class PortalTrigger : MonoBehaviour
             
             if (_animator != null)
             {
+                SoundManager.PlaySound(SoundType.PortalBuild, 1);
                 _animator.SetTrigger("Build");
             }
 

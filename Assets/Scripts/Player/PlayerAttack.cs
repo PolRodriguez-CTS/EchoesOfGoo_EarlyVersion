@@ -75,6 +75,7 @@ public class PlayerAttack : MonoBehaviour
         Knockout(_attackHitBox, _attackRadius);
     
         animator.SetTrigger("Attack");
+        SoundManager.PlaySound(SoundType.Attack1, 2);
     }
 
     void ExecuteHeavyAttack()
@@ -83,7 +84,7 @@ public class PlayerAttack : MonoBehaviour
         Stun(_hATKDmg, _heavyAttackHitBox, _heavyAttackRadius);
 
         animator.SetTrigger("ExecuteHeavy");
-        SoundManager.PlaySound(SoundType.Heavy1, 1);
+        SoundManager.PlaySound(SoundType.Heavy1, 3);
 
         heavyAttackTimer = 0;
 
