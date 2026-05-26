@@ -36,15 +36,4 @@ public class PressurePlate : MonoBehaviour
             }
         }
     }
-/*
-    void OnTriggerExit(Collider other)
-    {
-        if(other.CompareTag("Player") && _isPressed)
-        {
-            _isPressed = false;
-            animator.SetBool("isPressed", false);
-            manager.PlateDeactivated(); // Avisamos que se liberó
-        }
-    }
-*/
 }

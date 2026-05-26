@@ -10,6 +10,10 @@ public class ControladorPrisionero : MonoBehaviour
     public CinemachineCamera camaraEnemigoLibre; // La nueva cámara
     public GameObject scriptMovimientoJugador; // Para bloquear al jugador durante la animación
 
+    [Header("Configuración de Audio")]
+    public AudioSource fuenteAudio;     // El reproductor (AudioSource)
+    public AudioClip musicaJefe;        // El nuevo sonido o música que quieres poner
+
     public void CadenaRompida() 
     {
         cadenasRestantes--;
@@ -22,23 +26,30 @@ public class ControladorPrisionero : MonoBehaviour
 
     void LiberarEnemigo() 
     {
-        // 1. Disparar animación
         anim.SetTrigger("Unchained"); 
 
-        // 2. Cambiar la cámara de forma permanente
+        // 1. Cambiar la cámara
         if (camaraEnemigoLibre != null)
         {
-            // Le damos una prioridad alta (ej. 20)
-            // Como no tenemos código que la baje, se quedará ahí para siempre
             camaraEnemigoLibre.Priority = 20; 
         }
 
-        // 3. Opcional: Bloquear al jugador si no quieres que se mueva más
+        // 2. CAMBIAR Y REPRODUCIR EL AUDIO
+        if (fuenteAudio != null && musicaJefe != null)
+        {
+            fuenteAudio.Stop();               // Detiene el sonido actual (si hay alguno sonando)
+            fuenteAudio.clip = musicaJefe;    // Intercambia el clip viejo por el nuevo
+            fuenteAudio.Play();               // Reproduce el nuevo sonido
+            
+            // Opcional: Si quieres que el nuevo sonido se repita en bucle (ej: música de combate)
+            // fuenteAudio.loop = true; 
+        }
+
         if (scriptMovimientoJugador != null)
         {
             scriptMovimientoJugador.SetActive(false);
         }
 
-        Debug.Log("¡El enemigo es libre y la cámara ha cambiado!");
+        Debug.Log("¡Enemigo libre, cámara cambiada y nuevo audio sonando!");
     }
 }
