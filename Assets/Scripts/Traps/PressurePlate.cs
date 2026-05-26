@@ -24,6 +24,7 @@ public class PressurePlate : MonoBehaviour
         {
             _isPressed = true;
             animator.SetBool("isPressed", true);
+            SoundManager.PlaySound(SoundType.PressurePlate);
             
             // 1. Lógica de la puerta
             if(manager != null) manager.PlateActivated(); 

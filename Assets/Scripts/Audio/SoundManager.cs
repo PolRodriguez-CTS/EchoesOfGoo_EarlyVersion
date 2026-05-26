@@ -23,7 +23,9 @@ public enum SoundType
     Mushroom,
     Chain,
     Wall,
-    PortalBuild
+    PortalBuild,
+    PressurePlate,
+    SpikeTrap
 }
 
 [RequireComponent(typeof(AudioSource))]
