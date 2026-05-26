@@ -24,7 +24,8 @@ public class Spikes : MonoBehaviour
             _playerRef = other.GetComponent<PlayerController>();
             
             // Disparamos la animación de aviso o preparación
-            _animator.SetTrigger("PrepareSpikes"); 
+            _animator.SetTrigger("PrepareSpikes");
+            //SoundManager.PlaySound(SoundType.)
         }
     }
 
