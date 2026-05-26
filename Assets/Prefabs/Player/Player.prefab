@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 8814862738731172190}
 --- !u!114 &1478831348341233976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16068,5 +16068,10 @@ GameObject:
 --- !u!1 &8694827449895336136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3200933283614096377, guid: a04c5daef8c9ab344b10995e18f831aa, type: 3}
+  m_PrefabInstance: {fileID: 3115993262102854863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8814862738731172190 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a04c5daef8c9ab344b10995e18f831aa, type: 3}
   m_PrefabInstance: {fileID: 3115993262102854863}
   m_PrefabAsset: {fileID: 0}
