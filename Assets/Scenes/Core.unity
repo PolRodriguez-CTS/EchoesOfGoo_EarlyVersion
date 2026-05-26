@@ -496,8 +496,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"Anta\xF1o, los art\xEDfices ancestrales forjaron los primeros Golems
-    con el \xFAnico prop\xF3sito de someter y moldear la naturaleza a su voluntad.\""
+  m_Text: "\u201CLong ago, the ancient craftsmen forged the first Golems for the
+    sole purpose of subjugating and shaping nature to their will.\u201D"
 --- !u!222 &156633848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1271,8 +1271,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"La violenta fragmentaci\xF3n del mundo quebr\xF3 el equilibrio elemental,
-    liberando en el proceso a una misteriosa criatura del n\xFAcleo\""
+  m_Text: "\u201CThe violent fragmentation of the world shattered the fundamental
+    balance, unleashing a mysterious creature from the core in the process\u201D"
 --- !u!222 &314706806
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4308,9 +4308,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"Impulsados por una codicia insaciable, los Ancestros y sus m\xE1quinas
-    perforaron el n\xFAcleo del planeta para exprimir hasta la \xFAltima gota de
-    sus recursos naturales.\""
+  m_Text: "\u201CDriven by insatiable greed, the Ancestors and their machines drilled
+    into the planet's core to extract every last drop of its natural resources.\u201D"
 --- !u!222 &1485237282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5613,9 +5612,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"Con la captura de los defensores del bosque, el dominio de los Golems
-    se consolid\xF3, transformando el frondoso bioma en un basti\xF3n de fr\xEDa
-    opresi\xF3n mec\xE1nica.\""
+  m_Text: "\u201CWith the capture of the forest's defenders, the Golems' rule was
+    cemented, transforming the lush biome into a bastion of cold, mechanical oppression.\u201D"
 --- !u!222 &2025102800
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5773,9 +5771,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"En respuesta a la invasi\xF3n mec\xE1nica, el Gran Defensor emergi\xF3
-    del coraz\xF3n del bosque para proteger con su vida el fr\xE1gil bioma de la
-    codicia de los Golems.\""
+  m_Text: "\u201CIn response to the mechanical invasion, the Great Defender emerged
+    from the heart of the forest to protect the fragile biome with his life from
+    the greed of the Golems.\u201D"
 --- !u!222 &2099587498
 CanvasRenderer:
   m_ObjectHideFlags: 0

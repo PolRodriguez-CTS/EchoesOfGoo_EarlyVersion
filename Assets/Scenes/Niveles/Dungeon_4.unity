@@ -6306,7 +6306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396487862}
   - component: {fileID: 396487863}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -7213,7 +7213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670247549}
   - component: {fileID: 670247550}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -9244,7 +9244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324340538}
   - component: {fileID: 1324340539}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -11488,9 +11488,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.5534382
-  m_Height: 3.1068764
+  m_Height: 21.14428
   m_Direction: 1
-  m_Center: {x: -8.62, y: 5.16, z: -2.65}
+  m_Center: {x: -8.62, y: 14.58786, z: -2.65}
 --- !u!136 &2049375228
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11511,9 +11511,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.5534382
-  m_Height: 3.1068764
+  m_Height: 21.261906
   m_Direction: 1
-  m_Center: {x: 8.62, y: 5.16, z: -2.65}
+  m_Center: {x: 8.62, y: 14.529047, z: -2.65}
 --- !u!136 &2049375229
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11534,7 +11534,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 7.1058536
-  m_Height: 14.211708
+  m_Height: 41.8
   m_Direction: 1
   m_Center: {x: 0.122219086, y: 5.3749313, z: -0.55179167}
 --- !u!114 &2049375230
@@ -11790,7 +11790,7 @@ GameObject:
   - component: {fileID: 8683767618129238195}
   - component: {fileID: 8683767618129238194}
   - component: {fileID: 8683767618129238196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -11940,7 +11940,7 @@ GameObject:
   - component: {fileID: 6431576983187393621}
   - component: {fileID: 6431576983187393620}
   - component: {fileID: 6431576983187393622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -11984,7 +11984,7 @@ GameObject:
   - component: {fileID: 9127764110009550706}
   - component: {fileID: 9127764110009550705}
   - component: {fileID: 9127764110009550707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12058,7 +12058,7 @@ GameObject:
   - component: {fileID: 6996560269741439713}
   - component: {fileID: 6996560269741439712}
   - component: {fileID: 6996560269741439714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12079,7 +12079,7 @@ GameObject:
   - component: {fileID: 5691550883194614664}
   - component: {fileID: 5691550883194614663}
   - component: {fileID: 5691550883194614665}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12183,7 +12183,7 @@ GameObject:
   - component: {fileID: 8562678005380783987}
   - component: {fileID: 8562678005380783986}
   - component: {fileID: 8562678005380783988}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12257,7 +12257,7 @@ GameObject:
   - component: {fileID: 7906369359537892079}
   - component: {fileID: 7906369359537892078}
   - component: {fileID: 7906369359537892080}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12301,7 +12301,7 @@ GameObject:
   - component: {fileID: 4654512522744885389}
   - component: {fileID: 4654512522744885388}
   - component: {fileID: 4654512522744885390}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12451,7 +12451,7 @@ GameObject:
   - component: {fileID: 8886821687344994017}
   - component: {fileID: 8886821687344994016}
   - component: {fileID: 8886821687344994018}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12472,7 +12472,7 @@ GameObject:
   - component: {fileID: 7485650159448723470}
   - component: {fileID: 7485650159448723469}
   - component: {fileID: 7485650159448723471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12592,7 +12592,7 @@ GameObject:
   - component: {fileID: 6479744945244251722}
   - component: {fileID: 6479744945244251721}
   - component: {fileID: 6479744945244251723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12613,7 +12613,7 @@ GameObject:
   - component: {fileID: 9219269376937126711}
   - component: {fileID: 9219269376937126710}
   - component: {fileID: 9219269376937126712}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12732,7 +12732,7 @@ GameObject:
   - component: {fileID: 3492877420101386250}
   - component: {fileID: 3492877420101386249}
   - component: {fileID: 3492877420101386251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12904,7 +12904,7 @@ GameObject:
   - component: {fileID: 2233762044405390903}
   - component: {fileID: 2233762044405390902}
   - component: {fileID: 2233762044405390904}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -12925,7 +12925,7 @@ GameObject:
   - component: {fileID: 6472343767626700065}
   - component: {fileID: 6472343767626700064}
   - component: {fileID: 6472343767626700066}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13070,7 +13070,7 @@ GameObject:
   - component: {fileID: 8054732727733788325}
   - component: {fileID: 8054732727733788324}
   - component: {fileID: 8054732727733788326}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13106,7 +13106,7 @@ GameObject:
   - component: {fileID: 2353539615271629276}
   - component: {fileID: 2353539615271629275}
   - component: {fileID: 2353539615271629277}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13205,7 +13205,7 @@ GameObject:
   - component: {fileID: 7549127478555516744}
   - component: {fileID: 7549127478555516743}
   - component: {fileID: 7549127478555516745}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13467,7 +13467,7 @@ GameObject:
   - component: {fileID: 6373968561375440356}
   - component: {fileID: 6373968561375440355}
   - component: {fileID: 6373968561375440357}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13601,7 +13601,7 @@ GameObject:
   - component: {fileID: 7343953537653042982}
   - component: {fileID: 7343953537653042981}
   - component: {fileID: 7343953537653042983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13742,7 +13742,7 @@ GameObject:
   - component: {fileID: 5699637079225264692}
   - component: {fileID: 5699637079225264691}
   - component: {fileID: 5699637079225264693}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13763,7 +13763,7 @@ GameObject:
   - component: {fileID: 5775364907267034242}
   - component: {fileID: 5775364907267034241}
   - component: {fileID: 5775364907267034243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13784,7 +13784,7 @@ GameObject:
   - component: {fileID: 7779963276269607563}
   - component: {fileID: 7779963276269607562}
   - component: {fileID: 7779963276269607564}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13828,7 +13828,7 @@ GameObject:
   - component: {fileID: 9062725878508122567}
   - component: {fileID: 9062725878508122566}
   - component: {fileID: 9062725878508122568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -13849,7 +13849,7 @@ GameObject:
   - component: {fileID: 5319650824067951768}
   - component: {fileID: 5319650824067951767}
   - component: {fileID: 5319650824067951769}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14058,7 +14058,7 @@ GameObject:
   - component: {fileID: 3797570627260038841}
   - component: {fileID: 3797570627260038840}
   - component: {fileID: 3797570627260038842}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14150,7 +14150,7 @@ GameObject:
   - component: {fileID: 6534600624274099260}
   - component: {fileID: 6534600624274099259}
   - component: {fileID: 6534600624274099261}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14171,7 +14171,7 @@ GameObject:
   - component: {fileID: 4255433474219465133}
   - component: {fileID: 4255433474219465132}
   - component: {fileID: 4255433474219465134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14192,7 +14192,7 @@ GameObject:
   - component: {fileID: 8854112194004042165}
   - component: {fileID: 8854112194004042164}
   - component: {fileID: 8854112194004042166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14251,7 +14251,7 @@ GameObject:
   - component: {fileID: 7481005240307539284}
   - component: {fileID: 7481005240307539283}
   - component: {fileID: 7481005240307539285}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14287,7 +14287,7 @@ GameObject:
   - component: {fileID: 9141220751117495183}
   - component: {fileID: 9141220751117495182}
   - component: {fileID: 9141220751117495184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14499,7 +14499,7 @@ GameObject:
   - component: {fileID: 7538440965516281307}
   - component: {fileID: 7538440965516281306}
   - component: {fileID: 7538440965516281308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -14784,7 +14784,7 @@ GameObject:
   - component: {fileID: 8700745729713875686}
   - component: {fileID: 8700745729713875685}
   - component: {fileID: 8700745729713875687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15063,7 +15063,7 @@ GameObject:
   - component: {fileID: 7544885874191221659}
   - component: {fileID: 7544885874191221658}
   - component: {fileID: 7544885874191221660}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15084,7 +15084,7 @@ GameObject:
   - component: {fileID: 6628747201911445838}
   - component: {fileID: 6628747201911445837}
   - component: {fileID: 6628747201911445839}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15136,7 +15136,7 @@ GameObject:
   - component: {fileID: 4481987359575802122}
   - component: {fileID: 4481987359575802121}
   - component: {fileID: 4481987359575802123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15273,7 +15273,7 @@ GameObject:
   - component: {fileID: 7358400022778527966}
   - component: {fileID: 7358400022778527965}
   - component: {fileID: 7358400022778527967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15523,7 +15523,7 @@ GameObject:
   - component: {fileID: 8362824271613025068}
   - component: {fileID: 8362824271613025067}
   - component: {fileID: 8362824271613025069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15544,7 +15544,7 @@ GameObject:
   - component: {fileID: 7113897233212644403}
   - component: {fileID: 7113897233212644402}
   - component: {fileID: 7113897233212644404}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15565,7 +15565,7 @@ GameObject:
   - component: {fileID: 7819420667074930070}
   - component: {fileID: 7819420667074930069}
   - component: {fileID: 7819420667074930071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenasBody
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15609,7 +15609,7 @@ GameObject:
   - component: {fileID: 6435023100814272900}
   - component: {fileID: 6435023100814272899}
   - component: {fileID: 6435023100814272901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15828,7 +15828,7 @@ GameObject:
   - component: {fileID: 8322551563445403900}
   - component: {fileID: 8322551563445403899}
   - component: {fileID: 8322551563445403901}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -15872,7 +15872,7 @@ GameObject:
   - component: {fileID: 5533724230815512969}
   - component: {fileID: 5533724230815512968}
   - component: {fileID: 5533724230815512970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -16016,7 +16016,7 @@ GameObject:
   - component: {fileID: 5598004878197539820}
   - component: {fileID: 5598004878197539819}
   - component: {fileID: 5598004878197539821}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -16448,7 +16448,7 @@ GameObject:
   - component: {fileID: 8591883658591926975}
   - component: {fileID: 8591883658591926974}
   - component: {fileID: 8591883658591926976}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -16485,7 +16485,7 @@ GameObject:
   - component: {fileID: 6200811194952224560}
   - component: {fileID: 6200811194952224559}
   - component: {fileID: 6200811194952224561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -17221,7 +17221,7 @@ GameObject:
   - component: {fileID: 6592596433956565410}
   - component: {fileID: 6592596433956565409}
   - component: {fileID: 6592596433956565412}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -17422,7 +17422,7 @@ GameObject:
   - component: {fileID: 8541382023105083143}
   - component: {fileID: 8541382023105083142}
   - component: {fileID: 8541382023105083144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -17503,7 +17503,7 @@ GameObject:
   - component: {fileID: 6758251109999679558}
   - component: {fileID: 6758251109999679557}
   - component: {fileID: 6758251109999679559}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -17903,7 +17903,7 @@ GameObject:
   - component: {fileID: 7222316142403676748}
   - component: {fileID: 7222316142403676747}
   - component: {fileID: 7222316142403676749}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -17987,7 +17987,7 @@ GameObject:
   - component: {fileID: 9171767070493385803}
   - component: {fileID: 9171767070493385802}
   - component: {fileID: 9171767070493385804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -18660,7 +18660,7 @@ GameObject:
   - component: {fileID: 8169198116775100161}
   - component: {fileID: 8169198116775100160}
   - component: {fileID: 8169198116775100162}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -18726,7 +18726,7 @@ GameObject:
   - component: {fileID: 7697486841049022303}
   - component: {fileID: 7697486841049022302}
   - component: {fileID: 7697486841049022304}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -18810,7 +18810,7 @@ GameObject:
   - component: {fileID: 7746095798888956340}
   - component: {fileID: 7746095798888956339}
   - component: {fileID: 7746095798888956341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -19050,7 +19050,7 @@ GameObject:
   - component: {fileID: 7882780209473749639}
   - component: {fileID: 7882780209473749638}
   - component: {fileID: 7882780209473749640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -19411,7 +19411,7 @@ GameObject:
   - component: {fileID: 8148486365561601467}
   - component: {fileID: 8148486365561601466}
   - component: {fileID: 8148486365561601468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -19573,7 +19573,7 @@ GameObject:
   - component: {fileID: 9072472632421604331}
   - component: {fileID: 9072472632421604330}
   - component: {fileID: 9072472632421604332}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -19594,7 +19594,7 @@ GameObject:
   - component: {fileID: 8244148082810566095}
   - component: {fileID: 8244148082810566094}
   - component: {fileID: 8244148082810566096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -19857,7 +19857,7 @@ GameObject:
   - component: {fileID: 8441128629059945070}
   - component: {fileID: 8441128629059945069}
   - component: {fileID: 8441128629059945071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -20205,7 +20205,7 @@ GameObject:
   - component: {fileID: 8627121570753132638}
   - component: {fileID: 8627121570753132637}
   - component: {fileID: 8627121570753132639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -20498,7 +20498,7 @@ GameObject:
   - component: {fileID: 8781312119949418833}
   - component: {fileID: 8781312119949418832}
   - component: {fileID: 8781312119949418834}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -20582,7 +20582,7 @@ GameObject:
   - component: {fileID: 8791162737168243831}
   - component: {fileID: 8791162737168243830}
   - component: {fileID: 8791162737168243832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chain_Arm1
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -20815,7 +20815,7 @@ GameObject:
   - component: {fileID: 8992172669708344846}
   - component: {fileID: 8992172669708344845}
   - component: {fileID: 8992172669708344847}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
@@ -21342,7 +21342,7 @@ GameObject:
   - component: {fileID: 9202560513028226816}
   - component: {fileID: 9202560513028226815}
   - component: {fileID: 9202560513028226817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CadenaBrazo2
   m_TagString: Chains
   m_Icon: {fileID: 0}
