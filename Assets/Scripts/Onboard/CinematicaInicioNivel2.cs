@@ -81,10 +81,19 @@ public class CinematicaInicioNivel2 : MonoBehaviour
         // 5. Bucle de escucha para el Skip (Espacio)
         while (!cinematicaTerminada)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            // Opción 1: Barra espaciadora en el teclado
+            bool pulsaEspacioTeclado = Input.GetKeyDown(KeyCode.Space);
+
+            // Opción 2: Botón principal del mando (A en Xbox / X en PlayStation)
+            bool pulsaBotonMando = Input.GetKeyDown(KeyCode.JoystickButton0); 
+
+            // Opción 3: Por si acaso tu mando mapea el botón principal en el botón 1 (depende del modelo)
+            bool pulsaBotonMandoSecundario = Input.GetKeyDown(KeyCode.JoystickButton1);
+
+            if (pulsaEspacioTeclado || pulsaBotonMando || pulsaBotonMandoSecundario)
             {
-                Debug.Log("[CINEMÁTICA] Vídeo saltado por el jugador.");
-                videoPlayer.loopPointReached -= AlTerminarVideoPorSiSolo; // Desenganchamos el evento automático
+                Debug.Log("[CINEMÁTICA] Skip detectado correctamente desde el dispositivo activo.");
+                videoPlayer.loopPointReached -= AlTerminarVideoPorSiSolo;
                 StartCoroutine(ProcesoFinalConFadePropio());
                 yield break;
             }
